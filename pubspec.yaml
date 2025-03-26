@@ -1,0 +1,40 @@
+name: wagwan_ui
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0' # Updated for broader compatibility
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^8.1.6
+  go_router: ^14.8.1
+  flutter_gen: ^5.10.0
+  flutter_svg: ^2.0.10+1 # Added explicitly for SVG support
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.12 # Specified version for stability
+  flutter_gen_runner: ^5.10.0 # Matched with flutter_gen version
+  flutter_lints: ^4.0.0
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/fonts/
+
+fonts:
+  - family: PPMori
+    fonts:
+      - asset: assets/fonts/PPMori-Regular.otf
